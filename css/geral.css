@@ -20,18 +20,18 @@
 @font-face {
     font-family: "Twemoji";
     src: url('../font/Twemoji.Mozilla.ttf');
-    /* font-display: optional  */
+    font-display: optional;
 }
 
 @font-face {
     font-family: "Cantarell";
     src: url('../font/Cantarell.otf');
-    /* font-display: optional; */
+    font-display: optional;
 }
 
 * {
     color: var(--cor-texto);
-    font-family: 'Cantarell','Twemoji';
+    font-family: Roboto,'Cantarell','Twemoji';
     font-size: 12px;
 	box-sizing: border-box;
 }
