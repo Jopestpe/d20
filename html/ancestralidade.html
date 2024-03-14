@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
 <head>
-    <link rel="icon" type="image/png" href="Icone.png"/>
-    <title>🎲d20</title>
-    <link rel="stylesheet" href="/CSS/Folha.css">
-    <script src="../script.js" defer></script> 
+    <link rel="stylesheet" href="/css/geral.css">
 </head>
-<body>
+
+<div class="folha">
     <h1>🚼 Ancestralidade</h1>
-    <table id="TabelaAntecedentes">
+    <table class="tabela">
         <tr>
             <th rowspan="2">⛏️<br>Anã</th>
             <td>Meia sorte - Você dá acerto tanto no 20 quanto no 10</td>
@@ -18,7 +14,7 @@
         </tr>
         <tr>
             <th rowspan="2">🧝🏼<br>Élfica</th>
-            <td>Feitiço anulado 🎲1d20 + 🧠Intelecto > 🛡️CA anula magia.</td>
+            <td>Feitiço anulado 🎲1d20 + 🧠<span class="intelecto atributo">Intelecto</span> > 🛡️CA anula magia.</td>
         </tr>
         <tr>
             <td>Meditar - Não precisa dormir apenas ficar subconsciente por 4 h.</td>
@@ -42,7 +38,9 @@
             <td>Ataques carregados - Ele pode usar 1 turno para dobrar o dano do próximo golpe.</td>
         </tr>
         <tr>
-            <td>Quem tem limite é vilarejo, seus pontos de 💪Força e ✊ Constituição não são limitados em 5 pontos, +1💪Força.</td>
+            <td>Quem tem limite é vilarejo, seus pontos de 💪<span class="forca atributo">Força</span> e ✊ <span
+                    class="constituicao atributo">Constituição</span> não são limitados em 5 pontos, +1💪<span
+                    class="forca atributo">Força</span>.</td>
         </tr>
         <tr>
             <th rowspan="2">🪨<br>Golens</th>
@@ -60,67 +58,77 @@
         </tr>
         <tr>
             <th rowspan="2">🐢<br>Tartaruga</th>
-            <td>Casco giratório 🎲1d20 🏃Atletismo + 💪 Força > 14 se movimenta dentro de seu casco sem tomar dano.</td>
+            <td>Casco giratório 🎲1d20 🏃Atletismo + 💪 <span class="forca atributo">Força</span> > 14 se movimenta
+                dentro de seu casco sem tomar dano.</td>
         </tr>
         <tr>
             <td>Encolher os membros - +2 para esquivar na 🛡️Defesa.</td>
         </tr>
         <tr>
             <th rowspan="2">🐂<br>Minotauro</th>
-            <td>Cabeçada - Sua cabeçada dá 1d4 + 💪Força.</td>
+            <td>Cabeçada - Sua cabeçada dá 1d4 + 💪<span class="forca atributo">Força</span>.</td>
         </tr>
         <tr>
             <td>Paulada - Acertar ataque com crítico 🌀Atordoam o alvo.</td>
         </tr>
         <tr>
             <th rowspan="2">🐈‍⬛<br>Felino</th>
-            <td>Mega Pulo - 🎲1d20 🏃Atletismo + 💪 Força > 14 pula 3 vezes seu tamanho.</td>
+            <td>Mega Pulo - 🎲1d20 🏃Atletismo + 💪 <span class="forca atributo">Força</span> > 14 pula 3 vezes seu
+                tamanho.</td>
         </tr>
         <tr>
             <td>Gatuno - Anda, corre e pula sem fazer barulho e sempre cai em pé.</td>
         </tr>
         <tr>
             <th rowspan="2">🐎<br>Centauro</th>
-            <td>Hiper Coice - 🎲1d6 + 💪Força de dano e derruba o alvo.</td>
+            <td>Hiper Coice - 🎲1d6 + 💪<span class="forca atributo">Força</span> de dano e derruba o alvo.</td>
         </tr>
         <tr>
             <td>Cavalgar - Você tem o dobro de deslocamento.</td>
         </tr>
         <tr>
             <th rowspan="2">🧌<br>Ogro</th>
-            <td>Rugido - 🎲1d20 + Intimidação + 💪Força > 🧗 Determinação, os oponentes que ouviram dão –2 de dano em você por 5 turnos.</td>
+            <td>Rugido - 🎲1d20 + Intimidação + 💪<span class="forca atributo">Força</span> > 🧗 Determinação, os
+                oponentes que ouviram dão –2 de dano em você por 5 turnos.</td>
         </tr>
         <tr>
-            <td>Pancada - Quando o dado de dano der crítico, você pode rolar novamente e somar no dano total. (Somente armas corpo a corpo).</td>
+            <td>Pancada - Quando o dado de dano der crítico, você pode rolar novamente e somar no dano total. (Somente
+                armas corpo a corpo).</td>
         </tr>
         <tr>
             <th rowspan="2">👿<br>Demoníaca</th>
-            <td>Possessão - Ao tocar o oponente 🎲1d20 + 👻Sobrenatural > 🧗 Determinação, você entra no corpo do oponente por 3 turnos.</td>
+            <td>Possessão - Ao tocar o oponente 🎲1d20 + 👻Sobrenatural > 🧗 Determinação, você entra no corpo do
+                oponente por 3 turnos.</td>
         </tr>
         <tr>
             <td>Sem sangue - Você não sangra.</td>
         </tr>
         <tr>
             <th rowspan="2">🧛<br>Vampírica</th>
-            <td>Morder - 🎲1d20 + 🥊Briga > 🛡️CA, dano 🎲1d6 + 💪Força, 🩹cura o dobro do dano.</td>
+            <td>Morder - 🎲1d20 + 🥊Briga > 🛡️CA, dano 🎲1d6 + 💪<span class="forca atributo">Força</span>, 🩹cura o
+                dobro do dano.</td>
         </tr>
         <tr>
             <td>Sangue fresco - Todo ataque corpo a corpo que ferir te dará +2 🩸Vida.</td>
         </tr>
         <tr>
             <th rowspan="2">😇<br>Angelical</th>
-            <td>Voar - 🎲1d20 + 🤹Destreza > 12 - 🤸 Acrobacia, você pode voar a distância do seu deslocamento.</td>
+            <td>Voar - 🎲1d20 + 🤹<span class="destreza atributo">Destreza</span> > 12 - 🤸 Acrobacia, você pode voar a
+                distância do seu deslocamento.</td>
         </tr>
         <tr>
             <td>Aura - 🩹Cura 1 de Vida de aliados até 4 m (Apenas em combate).</td>
         </tr>
         <tr>
             <th rowspan="2">🐺<br>Licantropo</th>
-            <td>Transformar - 🎲1d20 > 12 - 🧗🏻Determinação, você se transforma e ganha +2💪Força + 2✊ Constituição. (3 turnos)</td>
+            <td>Transformar - 🎲1d20 > 12 - 🧗🏻Determinação, você se transforma e ganha +2💪<span
+                    class="forca atributo">Força</span> + 2✊ <span class="constituicao atributo">Constituição</span>. (3
+                turnos)</td>
         </tr>
         <tr>
-            <td>Fases da lua (1 por sessão) 🌘Crescente +1💪Força, 🌕Cheia +1💪Força +1✊ Constituição, 🌒Minguante: -1 🧗🏻Determinação, 🌑Nova: -3 🧗🏻Determinação.</td>
+            <td>Fases da lua (1 por sessão) 🌘Crescente +1💪<span class="forca atributo">Força</span>, 🌕Cheia +1💪<span
+                    class="forca atributo">Força</span> +1✊ <span class="constituicao atributo">Constituição</span>,
+                🌒Minguante: -1 🧗🏻Determinação, 🌑Nova: -3 🧗🏻Determinação.</td>
         </tr>
     </table>
-</body>
-</html>
+</div>

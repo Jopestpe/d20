@@ -1,0 +1,178 @@
+<head>
+    <link rel="stylesheet" href="/css/geral.css">
+</head>
+
+<div class="folha">
+    <h1>🪄Técnicas</h1>
+    <h2>Tipos</h2>
+    <h3>O tipo define oque a habilitade vai fazer</h3>
+    <table class="tabela">
+        <tr>
+            <th>Efeito</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td>🩹 Curar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>🩸 Sangrar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>🔥 Incendiar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>🧪 Envenenar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>🕶️ Cegar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>❄️ Congelar</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>🌩️ Eletrecutar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>🌀 Atordoar</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>⛓️ Aprisionar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>✈️ Voar</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>🪂 Planar</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>🏀 Saltar</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>🏐 Pular</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td> Potencializar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td> Enfraquecer</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td> Reforçar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td> Vulnerabilizar</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td> Dano</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td> Teletransportar</td>
+            <td>10 Acada 50Kg</td>
+        </tr>
+        <tr>
+            <td> Telepatia</td>
+            <td>6 por segundo</td>
+        </tr>
+        <tr>
+            <td> 🧲 Telesinesia </td>
+            <td>10 Acada 50Kg</td>
+        </tr>
+        <tr>
+            <td> Criar objetos (espadas, chaves, pás ... ) </td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td> Criar estuturas (paredes, portas, plataformas, ... ) </td>
+            <td>3</td>
+        </tr>
+    </table>
+    <h2>Modificadores</h2>
+    <h3>O modificador altera a funcionamento da sua técnica</h3>
+    <table class="tabela">
+        <tr>
+            <th>Modificador</th>
+            <th>Pontos</th>
+        </tr>
+        <tr>
+            <td>Area Retangular</td>
+            <td>Comprimento * 2 + Largura * 3</td>
+        </tr>
+        <tr>
+            <td>Area Cone</td>
+            <td>Altura * 1 + Base * 2</td>
+        </tr>
+        <tr>
+            <td>Area Circular</td>
+            <td>Raio * 4</td>
+        </tr>
+        <tr>
+            <td>Duracao</td>
+            <td>Numero de Turnos * 4</td>
+        </tr>
+        <tr>
+            <td> Alcance</td>
+            <td>Distancia (em metros) * 2</td>
+        </tr>
+    </table>
+    <h3>Criando uma técnica</h3>
+    <h3>Para criar um tecnica deve seguir a formula:</h3>
+    <h3>PontosEfeito * ValorDoEfeito = ( Canalizar + Consumo + Recarga ) - Modificadores</h3>
+    <h3>Criando uma tecnica de toque curativo de alvo unico que cura 18 vida</h3>
+    <h3>2 * 18 = (1 + 25 + 10) - 0</h3>
+    <table class="tabela">
+        <tr>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>🎬Canaliza</th>
+            <th>🔵Consome</th>
+            <th>⌛Recarga</th>
+            <th>Modificadores</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cura 18</td>
+            <td>1 Turno</td>
+            <td>25 Poder</td>
+            <td>10 Turnos</td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>Criando uma bola de fogo que é arremeçada e causa dano em uma area circular</h3>
+    <h3>3 * 6 = (1 + 33 + 4) - ((4 * 2)+(3 * 4 ))</h3>
+    <table class="tabela">
+        <tr>
+            <th>Numero</th>
+            <th>Tipo</th>
+            <th>🎬Canaliza</th>
+            <th>🔵Consome</th>
+            <th>⌛Recarga</th>
+            <th>Modificadores</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Cura 18</td>
+            <td>1 Turno</td>
+            <td>33 Poder</td>
+            <td>4 Turnos</td>
+            <td>4m Distancia, 3m Area Circular</td>
+        </tr>
+    </table>
+</div>

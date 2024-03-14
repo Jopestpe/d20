@@ -1,0 +1,71 @@
+{
+    "🏷️ Básico": {
+        "🪪 Nome": " ",
+        "🚼 Ancestralidade": " ",
+        "⭐ Nível": " ",
+        "🎂 Idade": " ",
+        "💼 Ocupação": " ",
+        "✨ XP": " "
+    },
+    "🎛️ Atributos": {
+        "💪 Força": " ",
+        "✊ Constituição": " ",
+        "🧠 Intelecto": " ",
+        "🤹‍♂️ Destreza ": " ",
+        "🤝 Carisma": " ",
+        "👁️ Percepção ": " "
+    },
+    "📜 Habilidades": {
+        "🏃 Atletismo (For)": " ",
+        "🐕 Adestramento (Car)": " ",
+        "🖥️ Tecnologia (Int)": " ",
+        "🤸 Acrobacia (Des)": " ",
+        "👻 Sobrenatural (Int)": " ",
+        "🩺 Medicina (Int)": " ",
+        "🥊 Briga (Des)": " ",
+        "🧰 Fabricação (Int)": " ",
+        "🌳 Natureza (Int)": " ",
+        "🤺 Reflexo (Des)": " ",
+        "🗣️ Influência (Car)": " ",
+        "🥷 Furtividade (Des)": " ",
+        "🗺️ Localizar (Per)": " ",
+        "🎓 Erudição (Int)": " ",
+        "🧬 Ciência (Int)": " ",
+        "🛞 Condução (Int)": " ",
+        "💡 Intuição (Int)": " ",
+        "🏋️ Fortitude (Con)": " ",
+        "🎯 Pontaria (Des)": " ",
+        "🫵 Intimidação (Car)": " ",
+        "🎖️ Admiração (Car)": " ",
+        "🗡️ Manuseio (Des)": " ",
+        "🔍 Investigação (Per)": " ",
+        "🧗🏻 Determinação (Con)": " ",
+        "🃏 Trapacear (Des)": " ",
+        "🎭 Atuação (Car)": " ",
+        "🧘 Sanidade (Int)": " "
+    },
+    "🌡️ Condições": {
+        "🍽️ Nutrição": " ",
+        "🩸 Vida (Con)": " ",
+        "⚡ Energia ": " ",
+        "🪖 Proteção": " ",
+        "🧘 Sanidade (Int)": " ",
+        "🔵 Poder": " "
+    },
+    "😐 Qualidades & Defeitos": {
+        "🙂 Qualidades": {},
+        "🙁 Defeitos": {}
+    },
+    "🎒 Pertences": {
+        "Nome e Quantidade": {},
+        "Espaço ocupado e Peso": {}
+    },
+    "🧤 Equipados": {
+        "Nome": {
+            "Ação":""
+        }
+    },
+    "🪄 Técnicas": {},
+    "📖 História": {},
+    "✏️ Anotações": {}
+}

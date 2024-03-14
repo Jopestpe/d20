@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html>
+
 <head>
-    <link rel="icon" type="image/png" href="Icone.png"/>
-    <title>🎲d20</title>
-    <link rel="stylesheet" href="/CSS/Folha.css">
-    <script src="../script.js" defer></script> 
+    <link rel="stylesheet" href="/css/geral.css">
 </head>
-<body>
+
+<div class="folha">
     <h1>📝Fazendo a ficha</h1>
     <h2>🏷️Básico</h2>
-    <table id="TabelaLinhas">
+    <table class="tabela">
         <tr>
             <td>🪪 Nome</td>
             <td>Escolha como te chamam</td>
@@ -38,151 +35,151 @@
     <h2>🎛️Atributos</h2>
     <h3>Os atributos começam com 0</h3>
     <h3>Você possui 10 pontos para distribuir entre os atributos (máximo 4 por atributo)</h3>
-    <table id="TabelaLinhas">
+    <table class="tabela">
         <tr>
-            <td>💪 Força</td>
+            <td>💪 <span class="forca atributo">Força</span></td>
             <td>O quão vigoroso você é</td>
         </tr>
         <tr>
-            <td>🤹 Destreza</td>
+            <td>🤹 <span class="destreza atributo">Destreza</span></td>
             <td>O quão ágil você é</td>
         </tr>
         <tr>
-            <td>✊ Constituição</td>
+            <td>✊ <span class="constituicao atributo">Constituição</span></td>
             <td>O quão resistente você é</td>
         </tr>
         <tr>
-            <td>🤝 Carisma</td>
+            <td>🤝 <span class="carisma atributo">Carisma</span></td>
             <td>O quão influente você é</td>
         </tr>
         <tr>
-            <td>🧠 Intelecto</td>
+            <td>🧠 <span class="intelecto atributo">Intelecto</span></td>
             <td>O quão inteligente e sábio você é e o quão bem você raciocina</td>
         </tr>
         <tr>
-            <td>👁️ Percepção </td>
+            <td>👁️ <span class="percepcao atributo">Percepção</span> </td>
             <td>O quão atento, focado ou atencioso em algo você é</td>
         </tr>
     </table>
     <h2>📜Habilidades </h2>
     <h3>As habilidades começam com 0 ponto</h3>
     <h3>Você possui 24 pontos para distribuir entre as habilidades (máximo 4 por habilidade)</h3>
-    <table id="TabelaLinhas">
+    <table class="tabela">
         <tr>
-            <td>🏃Atletismo (For)</td>
+            <td>🏃Atletismo (<span class="forca atributo">For</span>)</td>
             <td>O quão bom você é em atividades atléticas</td>
         </tr>
         <tr>
-            <td>🤸Acrobacia (Des)</td>
+            <td>🤸Acrobacia (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bom você é em fazer acrobacias</td>
         </tr>
         <tr>
-            <td>🥊Briga (Des)</td>
+            <td>🥊Briga (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você luta corpo a corpo</td>
         </tr>
         <tr>
-            <td>🤺Reflexo (Des)</td>
+            <td>🤺Reflexo (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você reage</td>
         </tr>
         <tr>
-            <td>🗺️Localizar (Per)</td>
+            <td>🗺️Localizar (<span class="percepcao atributo">Per</span>)</td>
             <td>O quão bem você sabe onde está, atalhos e lugares ao redor</td>
         </tr>
         <tr>
-            <td>🛞Condução (Des)</td>
+            <td>🛞Condução (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você consegue dirigir, pilotar ou montar</td>
         </tr>
         <tr>
-            <td>🎯Pontaria (Des)</td>
+            <td>🎯Pontaria (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você consegue atirar, disparar ou arremessar</td>
         </tr>
         <tr>
-            <td>🗡️Manuseio (Des)</td>
+            <td>🗡️Manuseio (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você lida com objetos que está segurando</td>
         </tr>
         <tr>
-            <td>🃏Trapacear (Des)</td>
+            <td>🃏Trapacear (<span class="destreza atributo">Des</span>)</td>
             <td>O quão bem você engana e ilude e destranca</td>
         </tr>
         <tr>
-            <td>🐕Adestramento (Car)</td>
+            <td>🐕Adestramento (<span class="carisma atributo">Car</span>)</td>
             <td>O quão bem você lida e domestica animais</td>
         </tr>
         <tr>
-            <td>👻Sobrenatural (Int)</td>
+            <td>👻Sobrenatural (<span class="intelecto atributo">Int</span>)</td>
             <td>O quão bem você sabe e lida com coisas místicas</td>
         </tr>
         <tr>
-            <td>🧰Fabricação (Int)</td>
+            <td>🧰Fabricação (<span class="intelecto atributo">Int</span>)</td>
             <td>O quão bem você consegue construir e consertar</td>
         </tr>
         <tr>
-            <td>🗣️Influência (Car)</td>
+            <td>🗣️Influência (<span class="carisma atributo">Car</span>)</td>
             <td>O quão bom você é em manipular e persuadir</td>
         </tr>
         <tr>
-            <td>🎓Erudição (Int)</td>
+            <td>🎓Erudição (<span class="intelecto atributo">Int</span>)</td>
             <td>O quão bem você entende sobre etiqueta, leis e política</td>
         </tr>
         <tr>
-            <td>💡Intuição (Int)</td>
+            <td>💡Intuição (<span class="intelecto atributo">Int</span>)</td>
             <td>O quão instintivo você é</td>
         </tr>
         <tr>
-            <td>🫵Intimidação (Car)</td>
+            <td>🫵Intimidação (<span class="carisma atributo">Car</span>)</td>
             <td>O quanto que sua fisionomia e ações intimidam alguém</td>
         </tr>
         <tr>
-            <td>🔍Investigação (Per)</td>
+            <td>🔍Investigação (<span class="percepcao atributo">Per</span>)</td>
             <td>O quão bem você busca, procura e examina</td>
-            </tr>
-            <tr>
-            <td>🎭Atuação (Car)</td>
-            <td>O quão bem você encena e se expressa</td>
-            </tr>
-            <tr>
-            <td>🖥️Tecnologia (Int)</td>
-            <td>Conhecimentos de sistemas eletrônicos e mecânicos</td>
-            </tr>
-            <tr>
-            <td>🩺Medicina (Int)</td>
-            <td>O quão bem você sabe operar, medicar e curar</td>
-            </tr>
-            <tr>
-            <td>🌳Natureza (Int)</td>
-            <td>O quão bem você lida em um ambiente não urbano</td>
-            </tr>
-            <tr>
-            <td>🥷Furtividade (Des)</td>
-            <td>O quão bem você consegue se esconder e se disfarçar</td>
-            </tr>
-            <tr>
-            <td>🧬Ciência (Int)</td>
-            <td>Conhecimentos de física, biologia, química ou alquimia</td>
-            </tr>
-            <tr>
-            <td>🏋️Fortitude (Con)</td>
-            <td>O quão resistente você é a exaustão</td>
-            </tr>
-            <tr>
-            <td>🎖️Admiração (Car)</td>
-            <td>O quão bem você encanta</td>
-            </tr>
-            <tr>
-            <td>🧗🏻Determinação (Con)</td>
-            <td>O quão corajoso você é, e seu nível de autocontrole</td>
-            </tr>
-            <tr>
-            <td>🧘Sanidade (Int)</td>
-            <td>O quão bem mentalmente equilibrado é você</td>
-            </tr>
-    </table>  
-    <h2>🌡️Condições</h2>
-    <table id="TabelaLinhas">
+        </tr>
         <tr>
-            <td>🩸 Vida (Con)</td>
+            <td>🎭Atuação (<span class="carisma atributo">Car</span>)</td>
+            <td>O quão bem você encena e se expressa</td>
+        </tr>
+        <tr>
+            <td>🖥️Tecnologia (<span class="intelecto atributo">Int</span>)</td>
+            <td>Conhecimentos de sistemas eletrônicos e mecânicos</td>
+        </tr>
+        <tr>
+            <td>🩺Medicina (<span class="intelecto atributo">Int</span>)</td>
+            <td>O quão bem você sabe operar, medicar e curar</td>
+        </tr>
+        <tr>
+            <td>🌳Natureza (<span class="intelecto atributo">Int</span>)</td>
+            <td>O quão bem você lida em um ambiente não urbano</td>
+        </tr>
+        <tr>
+            <td>🥷Furtividade (<span class="destreza atributo">Des</span>)</td>
+            <td>O quão bem você consegue se esconder e se disfarçar</td>
+        </tr>
+        <tr>
+            <td>🧬Ciência (<span class="intelecto atributo">Int</span>)</td>
+            <td>Conhecimentos de física, biologia, química ou alquimia</td>
+        </tr>
+        <tr>
+            <td>🏋️Fortitude (<span class="constituicao atributo">Con</span>)</td>
+            <td>O quão resistente você é a exaustão</td>
+        </tr>
+        <tr>
+            <td>🎖️Admiração (<span class="carisma atributo">Car</span>)</td>
+            <td>O quão bem você encanta</td>
+        </tr>
+        <tr>
+            <td>🧗🏻Determinação (<span class="constituicao atributo">Con</span>)</td>
+            <td>O quão corajoso você é, e seu nível de autocontrole</td>
+        </tr>
+        <tr>
+            <td>🧘Sanidade (<span class="intelecto atributo">Int</span>)</td>
+            <td>O quão bem mentalmente equilibrado é você</td>
+        </tr>
+    </table>
+    <h2>🌡️Condições</h2>
+    <table class="tabela">
+        <tr>
+            <td>🩸 Vida (<span class="constituicao atributo">Con</span>)</td>
             <td>Seu nível de ferimentos</td>
-            <td>🩸Vida = sua 10 + ✊Constituição * 4</td>
+            <td>🩸Vida = sua 10 + ✊<span class="constituicao atributo">Constituição</span> * 4</td>
         </tr>
         <tr>
             <td>🪖 Proteção</td>
@@ -199,22 +196,21 @@
             <td>O quão você está cansado</td>
             <td>Começa com 100%</td>
         </tr>
-        
+
         <tr>
-            <td>🧘 Sanidade (Int)</td>
+            <td>🧘 Sanidade (<span class="intelecto atributo">Int</span>)</td>
             <td>O quão louco você está</td>
-            <td>🧘Sanidade = 10 + 🧠Intelecto * 4</td>
+            <td>🧘Sanidade = 10 + 🧘Sanidade + 🧠<span class="intelecto atributo">Intelecto</span> * 4</td>
         </tr>
-        
     </table>
-    <h2>😐Qualidades & Defeitos</h2>
-    <h3>Você possui 3 pontos para obter em 🙂Qualidades</h3>
-    <h3>Pegar 🙁Defeitos te dá pontos para obter 🙂Qualidades</h3>
-    <h3>Veja a lista de Qualidades & Defeitos</h3>
+    <h2>😐 Qualidades & Defeitos</h2>
+    <h3>Você possui 3 pontos para obter em 🙂 Qualidades</h3>
+    <h3>Pegar 🙁 Defeitos te dá pontos para obter 🙂 Qualidades</h3>
+    <h3>Veja na aba de 🙂 Qualidades e 🙁 Defeitos</h3>
     <h2>🎒Pertences</h2>
     <h3>Seu 🪙Dinheiro = 🎲5 + Recursos d20</h3>
-    <h3>Adquira 🎒Pertences na 🛍️Loja</h3>
-    <table id="TabelaLinhas"> 
+    <h3>Adquira 🎒Pertences na <a class="atalho" href="/html/loja.html" target="pagina" title="Página loja">🛍️ Loja</a></h3>
+    <table class="tabela">
         <tr>
             <td>Situação</td>
             <td>Resultado</td>
@@ -252,7 +248,35 @@
         </tr>
     </table>
     <h2>🧤Equipados</h2>
-    <h3>São🎒Pertences que estão com você e podem ser pegos em turnos de ação</h3>
-    <h3>Você é capaz de carregar 💪Força * 4 kg</h3>
-</body>
-</html>
+    <h3>São itens que estão com você e podem ser utilizados em turnos de ação</h3>
+    <h3>Você é capaz de carregar 💪<span class="forca atributo">Força</span> * 4 kg</h3>
+    <h2>🪄Técnicas</h2>
+    <table class="tabela">
+        <tr>
+            <td>Número</td>
+            <td>Insira a posicao da técnica para facilitar 🎤Narrador encontrar</td>
+        </tr>
+        <tr>
+            <td>Tipo</td>
+            <td>Insira um dos Tipos da lista e valor do efeito</td>
+        </tr>
+        <tr>
+            <td>Canalizar</td>
+            <td>Insira quanto dura em 🎬Ação para realizar essa técnica</td>
+        </tr>
+        <tr>
+            <td>Consome</td>
+            <td>Insira quanto consome de  ⚡Energia ou 🔵Poder</td>
+        </tr>
+        <tr>
+            <td>Recarga</td>
+            <td>Insira quanto tempo quantos turnos para usar novamente</td>
+        </tr>
+        <tr>
+            <td>Modificadores</td>
+            <td>Insira quantos modificadores quiser com seus valores</td>
+        </tr>
+    </table>
+    <h3>Técnicas são habilidades que podem ser usadas em combate</h3>
+    <h3>Confira detalhes na aba <a class="atalho" href="/html/tecnicas.html" target="pagina" title="Página das técnicas">🪄 Técnicas</a></h3>
+</div>

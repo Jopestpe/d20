@@ -1,0 +1,196 @@
+:root {
+    --cor-fundo: #ffffff;
+    --cor-fundo-2: #fffadf;
+    --cor-texto: #111111; 
+    --cor-borda: #7F7F7F;
+    --cor-azul: #4096f5;
+    --borda-normal: solid 2px var(--cor-borda);
+    --borda-destaque: solid 2px var(--cor-azul);
+    --raio-borda:15px;
+}
+
+@media (prefers-color-scheme: dark) { 
+    :root {
+         --cor-fundo: #111111;
+         --cor-texto: #fffadf;
+         --cor-borda: #cecece;
+     } 
+}
+
+@font-face {
+    font-family: "Twemoji";
+    src: url('../font/Twemoji.Mozilla.ttf');
+    /* font-display: optional  */
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url('../font/Cantarell.otf');
+    font-display: optional;
+}
+
+* {
+    color: var(--cor-texto);
+    font-family: 'Cantarell','Twemoji';
+    font-size: 12px;
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    display:flex;
+    flex-direction: column;
+}
+
+.abas {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 20px;
+    padding-inline: 20px;
+}
+
+.aba {
+    margin-top:10px;
+		margin-bottom:16px;
+    text-decoration: none;
+    border: var(--borda-normal);
+    border-radius: var(--raio-borda);
+    display:flex;
+    align-items: center;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.aba:hover {
+    border: var(--borda-destaque);
+}
+
+.pagina {
+    background-color: var(--cor-fundo);
+    border: var(--borda-normal);
+    border-radius: var(--raio-borda);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    overflow: auto;
+    @media (max-width: 800px) {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        border-block: var(--borda-normal);
+    }
+}
+
+h1,h2 {
+    font-size: 1.8rem;
+    margin-block: 12px;
+}
+
+h3,h4 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-block: 12px;
+}
+
+p {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.folha {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 6px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.perguntas {
+   justify-content: center;
+}
+
+.folha:last-child {
+   padding-bottom: 10vh;
+}
+
+.atributo {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.forca {
+    color: rgba(192, 0, 0, 1);
+}
+
+.destreza {
+    color: rgba(0,176, 80, 1);
+}
+
+.constituicao {
+    color: rgba(112, 48, 160, 1);
+}
+
+.carisma {
+    color: rgba(255, 200, 38, 1);
+}
+
+.percepcao {
+    color: rgba(131, 60, 11, 1);
+}
+
+.intelecto {
+    color: rgba(68, 113, 196, 1);
+}
+
+.tabela {
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td{
+    border: solid 1px var(--cor-borda);
+    padding: 4px;
+    min-width: 20px;
+    height: 28px;
+    font-size: 16px;
+}
+.tabela th {
+    font-weight: bold;
+}
+.atalho {
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: var(--cor-azul);
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-borda);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-texto);
+}

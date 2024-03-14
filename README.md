@@ -1,6 +1,11 @@
 # d20 
 
-## Adicionar
+## abrir
 
-* Colocar Atributo recarga nas Técnicas que é o tempo em turnos para jogar novamente a mesma habilidade
-* Colocar Sistema de manas por pontos de manas
+```sh
+
+npm i -g serve
+
+serve -l 8080
+
+```
