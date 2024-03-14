@@ -14,7 +14,7 @@
          --cor-fundo: #111111;
          --cor-texto: #fffadf;
          --cor-borda: #cecece;
-     } 
+    } 
 }
 
 @font-face {
@@ -26,7 +26,7 @@
 @font-face {
     font-family: "Cantarell";
     src: url('../font/Cantarell.otf');
-    font-display: optional;
+    /* font-display: optional; */
 }
 
 * {
