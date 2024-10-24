@@ -1,11 +1,4 @@
 # d20 
+d20 é um sistema para RPG de mesa 
 
-## abrir
-
-```sh
-
-npm i -g serve
-
-serve -l 8080
-
-```
+#### Ele foi criado para servir como uma base simples e versátil para diversos tipos de RPGs
