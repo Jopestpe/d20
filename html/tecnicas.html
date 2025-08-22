@@ -132,7 +132,21 @@
             <td>Distancia (em metros) * 2</td>
         </tr>
     </table>
-    <h3>Criando uma técnica</h3>
+    <h2>Colaterais</h2>
+    <h3>O colateral representa o preço a ser pago pelo uso da habilidade</h3>
+    <table class="tabela">
+        <tr>
+            <th>Colateral</th>
+            <th>Pontos</th>
+            <th>Descricao</th>
+        </tr>
+        <tr>
+            <td>Contrafeitico</td>
+            <td>Chance(%) * 1</td>
+            <td>Chance do seu feitico atingir voce com parte do dano</td>
+        </tr>
+    </table>
+    <h2>Criando uma técnica</h2>
     <h3>Para criar um técnica deve seguir a formula:</h3>
     <h3>PontosEfeito * ValorDoEfeito = ( Canalizar + Consumo + Recarga ) - Modificadores</h3>
     <h3>Criando uma técnica de toque curativo de alvo único que cura 18 vida</h3>
@@ -145,6 +159,7 @@
             <th>🔵Consome</th>
             <th>⌛Recarga</th>
             <th>Modificadores</th>
+            <th>Colateral</th>
         </tr>
         <tr>
             <td>1</td>
@@ -153,10 +168,11 @@
             <td>25 Poder</td>
             <td>10 Turnos</td>
             <td></td>
+            <td></td>
         </tr>
     </table>
     <h3>Criando uma bola de fogo que é arremessada e causa dano em uma area circular</h3>
-    <h3>3 * 6 = (1 + 33 + 4) - ((4 * 2)+(3 * 4 ))</h3>
+    <h3>3 * 5 = (1 + 30 + 4) - ((4 * 2)+(3 * 4))</h3>
     <table class="tabela">
         <tr>
             <th>Numero</th>
@@ -165,14 +181,16 @@
             <th>🔵Consome</th>
             <th>⌛Recarga</th>
             <th>Modificadores</th>
+            <th>Colateral</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td>Cura 18</td>
+            <td>2</td>
+            <td>Dano 5</td>
             <td>1 Turno</td>
-            <td>33 Poder</td>
+            <td>30 Poder</td>
             <td>4 Turnos</td>
             <td>4m Distancia, 3m Area Circular</td>
+             <td></td>
         </tr>
     </table>
 </div>
