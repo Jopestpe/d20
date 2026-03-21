@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang="pt-br">
 
-</html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sistema para rpg de mesa">
-  <link rel="icon" type="image/png" href="icone.png" />
+  <link rel="icon" type="image/svg+xml" href="icone.svg" />
+  </link>
   <title>d20</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="abas">
-    <a class="aba" href="#d20" target="pagina" title="d20">🎲 d20</a>
-    <a class="aba" href="#ficha" target="pagina" title="Página da ficha">📄 Ficha</a>
-    <a class="aba" href="#fazer" target="pagina" title="Página para fazer ficha">📝 Fazendo a ficha</a>
-    <a class="aba" href="#sistema" target="pagina" title="Página do sistema">⚙️ Sistema</a>
-    <a class="aba" href="#ancestralidade" target="pagina" title="Página das ancestralidades">🚼 Ancestralidade</a>
-    <a class="aba" href="#ocupações" target="pagina" title="Página das ocupações">💼 Ocupações</a>
-    <a class="aba" href="#loja" target="pagina" title="Página loja">🛍️ Loja</a>
-    <a class="aba" href="#defeitos" target="pagina" title="Página de defeitos">🙁 Defeitos</a>
-    <a class="aba" href="#qualidades" target="pagina" title="Página de qualidades">🙂 Qualidades</a>
-    <a class="aba" href="#tecnicas" target="pagina" title="Página das técnicas">🪄 Técnicas</a>
+    <a class="aba" href="#d20">🎲 d20</a>
+    <a class="aba" href="#ficha" title="Página da ficha">📄 Ficha</a>
+    <a class="aba" href="#fazer" title="Página para fazer ficha">📝 Fazendo a ficha</a>
+    <a class="aba" href="#sistema" title="Página do sistema">⚙️ Sistema</a>
+    <a class="aba" href="#ancestralidade" title="Página das ancestralidades">🚼 Ancestralidade</a>
+    <a class="aba" href="#ocupações" title="Página das ocupações">💼 Ocupações</a>
+    <a class="aba" href="#loja" title="Página loja">🛍️ Loja</a>
+    <a class="aba" href="#defeitos" title="Página de defeitos">🙁 Defeitos</a>
+    <a class="aba" href="#qualidades" title="Página de qualidades">🙂 Qualidades</a>
+    <a class="aba" href="#tecnicas" title="Página das técnicas">🪄 Técnicas</a>
     <button class="aba" type="button" onclick="window.print()">📄 Baixar PDF</button>
   </div>
 
@@ -33,6 +32,7 @@
       <h1>Oque é d20?</h1>
       <h4>d20 é um sistema para RPG de mesa</h4>
       <h4>Ele foi criado para servir como uma base simples e versátil para diversos tipos de RPGs</h4>
+      <h5>Versão 0.31.0</h5>
     </section>
 
     <section id="ficha" class="pagina">
@@ -213,10 +213,10 @@
       <h2>🪄 Técnicas</h2>
       <table class="tabela">
         <tr>
-          <th>🔢 Numero</th>
           <th>🌟 Efeito</th>
-          <th>⌛Recarga</th>
+          <th>🎬 Ação</th>
           <th>🔋 Consome</th>
+          <th>⌛Recarga</th>
         </tr>
         <tr>
           <td></td>
@@ -440,13 +440,13 @@
         </tr>
         <tr>
           <td>⚡ Energia</td>
-          <td>O quão você está cansado</td>
-          <td>Inicia com 10 + (🏋️ Fortitude * 5)</td>
+          <td>Quantas cargas de energia você possui</td>
+          <td>🏋️ Fortitude + 💪 Força</td>
         </tr>
         <tr>
           <td>🔵 Poder</td>
-          <td>O quanto de poder sobrenatural você possui</td>
-          <td>Inicia com 👻 Sobrenatural * 5</td>
+          <td>Quantas cargas de poder você possui</td>
+          <td>👻 Sobrenatural + 🧠 Intelecto</td>
         </tr>
       </table>
       <h2>😐 Qualidades & Defeitos</h2>
@@ -455,8 +455,7 @@
       <h3>Veja na aba de 🙂 Qualidades e 🙁 Defeitos</h3>
       <h2>🎒Pertences</h2>
       <h3>Seu 🪙Dinheiro = 1d20 + 5 + Recursos </h3>
-      <h3>Adquira 🎒Pertences na <a class="atalho" href="#loja" target="pagina" title="Página loja">🛍️
-          Loja</a></h3>
+      <h3>Adquira 🎒Pertences na <a class="atalho" href="#loja" title="Página loja">🛍️ Loja</a></h3>
       <table class="tabela">
         <tr>
           <td>Situação</td>
@@ -500,35 +499,35 @@
       <h2>🪄Técnicas</h2>
       <table class="tabela">
         <tr>
-          <td>🔢 Número</td>
-          <td>Insira a posição da técnica para facilitar 🎤Narrador encontrar</td>
-        </tr>
-        <tr>
           <td>🌟 Efeito</td>
           <td>Insira oque vai acontecer ao usar técnica</td>
         </tr>
         <tr>
-          <td>⌛Recarga</td>
-          <td>Insira quantos Turnos até poder usar novamente</td>
+          <td>🎬 Ação</td>
+          <td>Insira quantos de 🎬 Ação vai usar do 🎞️Turno</td>
         </tr>
         <tr>
           <td>🔋 Consome</td>
           <td>Insira quanto consome de 🔵Poder ou ⚡Energia</td>
         </tr>
+        <tr>
+          <td>⌛Recarga</td>
+          <td>Insira quantos Turnos até poder usar novamente</td>
+        </tr>
       </table>
-      <h3>Confira detalhes em <a class="atalho" href="#tecnicas" target="pagina" title="Página das técnicas">🪄
+      <h3>Confira detalhes em <a class="atalho" href="#tecnicas" title="Página das técnicas">🪄
           Técnicas</a></h3>
     </section>
 
     <section id="sistema" class="pagina">
       <h1>⚙️Sistema</h1>
-      <h2>🎞️Ações </h2>
+      <h2>🎞️Turno </h2>
       <table class="tabela">
         <tr>
-          <td>Cada rodada de 🎞️Ações dura 6 segundos</td>
+          <td>Cada 🎞️Turno dura 6 segundos</td>
         </tr>
         <tr>
-          <td>Por turno pode agir até 100% de 🎬Ação</td>
+          <td>Por 🎞️Turno pode agir até 100% de 🎬Ação</td>
         </tr>
         <tr>
           <td>Iniciativa role 🎲1d20 + 🤺Reflexo + 🤹<span class="destreza atributo">Destreza</span></td>
@@ -786,14 +785,14 @@
       <h1>🚼 Ancestralidade</h1>
       <table class="tabela">
         <tr>
-          <th rowspan="2">⛏️<br>Anã</th>
+          <td rowspan="2">⛏️<br>Anã</td>
           <td>Meia sorte - Você dá acerto tanto no 20 quanto no 10</td>
         </tr>
         <tr>
           <td>Resiliência compacta - Você tem Imunidade a veneno.</td>
         </tr>
         <tr>
-          <th rowspan="2">🧝🏼<br>Élfica</th>
+          <td rowspan="2">🧝🏼<br>Élfica</td>
           <td>Feitiço anulado 🎲1d20 + 🧠<span class="intelecto atributo">Intelecto</span> > 🛡️CA anula
             magia.</td>
         </tr>
@@ -801,22 +800,21 @@
           <td>Meditar - Não precisa dormir apenas ficar subconsciente por 4 h.</td>
         </tr>
         <tr>
-          <th rowspan="2">🐲<br>Draconiana</th>
+          <td rowspan="2">🐲<br>Draconiana</td>
           <td>Baforada 🎲1d20 + 🎯Pontaria > 🛡️CA, causa 2d6 de dano cone de até 6 metros de alcance.</td>
         </tr>
         <tr>
           <td>Escamas de dragão - Você tem Imunidade ao fogo.</td>
         </tr>
         <tr>
-          <th rowspan="2">👨<br>Humano</th>
-          <td>Aprimorado 🎲1d20 > 12, dobra seu maior atributo (caso empate você escolhe) (dura 3 Turnos).
-          </td>
+          <td rowspan="2">👨<br>Humano</td>
+          <td>Aprimorado 🎲1d20 > 12, dobra seu maior atributo (caso empate você escolhe) (dura 3 Turnos).</td>
         </tr>
         <tr>
           <td>Talentoso - Escolha uma +1🪄Técnica.</td>
         </tr>
         <tr>
-          <th rowspan="2">🦶<br>Gigante</th>
+          <td rowspan="2">🦶<br>Gigante</td>
           <td>Ataques carregados - Ele pode usar 1 turno para dobrar o dano do próximo golpe.</td>
         </tr>
         <tr>
@@ -825,21 +823,21 @@
               class="forca atributo">Força</span>.</td>
         </tr>
         <tr>
-          <th rowspan="2">🪨<br>Golens</th>
+          <td rowspan="2">🪨<br>Golens</td>
           <td>Desmontar - Pode retirar e recolocar partes do corpo.</td>
         </tr>
         <tr>
           <td>Duro como pedra - Sua 🪖 Proteção base 14.</td>
         </tr>
         <tr>
-          <th rowspan="2">🌲<br>Arvores</th>
+          <td rowspan="2">🌲<br>Arvores</td>
           <td>Natureza revitalizadora - Suas folhas 🩹Cura 1 de vida.</td>
         </tr>
         <tr>
           <td>Fotossíntese - Com luz e água 🩹Cura 1 de vida por hora.</td>
         </tr>
         <tr>
-          <th rowspan="2">🐢<br>Tartaruga</th>
+          <td rowspan="2">🐢<br>Tartaruga</td>
           <td>Casco giratório 🎲1d20 🏃Atletismo + 💪 <span class="forca atributo">Força</span> > 14 se
             movimenta
             dentro de seu casco sem tomar dano.</td>
@@ -848,14 +846,14 @@
           <td>Encolher os membros - +2 para esquivar na 🛡️Defesa.</td>
         </tr>
         <tr>
-          <th rowspan="2">🐂<br>Minotauro</th>
+          <td rowspan="2">🐂<br>Minotauro</td>
           <td>Cabeçada - Sua cabeçada dá 1d4 + 💪<span class="forca atributo">Força</span>.</td>
         </tr>
         <tr>
           <td>Paulada - Acertar ataque com crítico 🌀Atordoam o alvo.</td>
         </tr>
         <tr>
-          <th rowspan="2">🐈‍⬛<br>Felino</th>
+          <td rowspan="2">🐈‍⬛<br>Felino</td>
           <td>Mega Pulo - 🎲1d20 🏃Atletismo + 💪 <span class="forca atributo">Força</span> > 14 pula 3 vezes
             seu
             tamanho.</td>
@@ -864,14 +862,14 @@
           <td>Gatuno - Anda, corre e pula sem fazer barulho e sempre cai em pé.</td>
         </tr>
         <tr>
-          <th rowspan="2">🐎<br>Centauro</th>
+          <td rowspan="2">🐎<br>Centauro</td>
           <td>Hiper Coice - 🎲1d6 + 💪<span class="forca atributo">Força</span> de dano e derruba o alvo.</td>
         </tr>
         <tr>
           <td>Cavalgar - Você tem o dobro de deslocamento.</td>
         </tr>
         <tr>
-          <th rowspan="2">🧌<br>Ogro</th>
+          <td rowspan="2">🧌<br>Ogro</td>
           <td>Rugido - 🎲1d20 + Intimidação + 💪<span class="forca atributo">Força</span> > 🧗 Determinação,
             os
             oponentes que ouviram dão –2 de dano em você por 5 turnos.</td>
@@ -882,7 +880,7 @@
             armas corpo a corpo).</td>
         </tr>
         <tr>
-          <th rowspan="2">👿<br>Demoníaca</th>
+          <td rowspan="2">👿<br>Demoníaca</td>
           <td>Possessão - Ao tocar o oponente 🎲1d20 + 👻Sobrenatural > 🧗 Determinação, você entra no corpo
             do
             oponente por 3 turnos.</td>
@@ -891,7 +889,7 @@
           <td>Sem sangue - Você não sangra.</td>
         </tr>
         <tr>
-          <th rowspan="2">🧛<br>Vampírica</th>
+          <td rowspan="2">🧛<br>Vampírica</td>
           <td>Morder - 🎲1d20 + 🥊Briga > 🛡️CA, dano 🎲1d6 + 💪<span class="forca atributo">Força</span>,
             🩹cura o
             dobro do dano.</td>
@@ -900,7 +898,7 @@
           <td>Sangue fresco - Todo ataque corpo a corpo que ferir te dará +2 🩸Vida.</td>
         </tr>
         <tr>
-          <th rowspan="2">😇<br>Angelical</th>
+          <td rowspan="2">😇<br>Angelical</td>
           <td>Voar - 🎲1d20 + 🤹<span class="destreza atributo">Destreza</span> > 12 - 🤸 Acrobacia, você pode
             voar a
             distância do seu deslocamento.</td>
@@ -909,7 +907,7 @@
           <td>Aura - 🩹Cura 1 de Vida de aliados até 4 m (Apenas em combate).</td>
         </tr>
         <tr>
-          <th rowspan="2">🐺<br>Licantropo</th>
+          <td rowspan="2">🐺<br>Licantropo</td>
           <td>Transformar - 🎲1d20 > 12 - 🧗🏻Determinação, você se transforma e ganha +2💪<span
               class="forca atributo">Força</span> + 2✊ <span class="constituicao atributo">Constituição</span>. (3
             turnos)</td>
@@ -2892,150 +2890,1078 @@
 
     <section id="tecnicas" class="pagina">
       <h1>🪄 Técnicas</h1>
-
-      <h2>🌟 Efeitos</h2>
+      <table class="tabela">
+        <tr><td>As 🪄 Técnicas não tem tempo de ⌛Recarga nem 🔋 Consomem</th></tr>
+        <tr><td>As 🪄 Truques dobram seu efeito a cada 5 🔷 Níveis</th>
+        </tr><tr><td>As 🪄 Técnicas dobram seu efeito se dobrar seu 🔋 Consumo</th></tr>
+        <tr><td>As 🪄 Técnicas e Truques usam ↔️ seguido de um decimal para metros de alcance</th></tr>
+        <tr><td>Inicia com 3 Truques e 3 🪄 Técnicas</th></tr>
+        <tr><td>Recebe +1 Truque e +1 🪄 Técnicas acada 5 🔷 Níveis</th></tr>
+      </table>
+      <h3>
+        <a class="atalho" href="#tecnicas_truques" title="Truques">🪄 Truques</a> | 
+        <a class="atalho" href="#tecnicas_magias" title="Técnicas Magias">🪄 Técnicas Magias</a> | 
+        <a class="atalho" href="#tecnicas_habilidades" title="Técnicas Habilidades">🪄 Técnicas Habilidades</a> | 
+        <a class="atalho" href="#tecnicas_extras" title="Técnicas Extras">🪄 Técnicas Extras</a> 
+      </h3>
+    </section>
+    <section id="tecnicas_truques" class="pagina">
+      <h2>Lista de 🪄 Truques (Magias)</h2>
       <table class="tabela">
         <tr>
+          <th>Exclusivo</th>
           <th>🌟 Efeito</th>
-          <th>🔋 Consome</th>
-          <th>⌛Recarga</th>
+          <th>🎬 Ação</th>
         </tr>
         <tr>
-          <td>🩹 Curar 4 vida</td>
-          <td>3 🔵 Poder</td>
-          <td>2 Turno</td>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🫅 Nobre</td>
+          <td>🔥 Raio de fogo: 💢 Dano 4 ↔️36</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>🕶️ Cegar 1 Turno</td>
-          <td>3 🔵 Poder</td>
-          <td>2 Turnos + Duração</td>
+          <td>📿 Neófito, 🧪 Alquimista, 🏺 Artesão, 🔬 Ourives</td>
+          <td>🧪 Respingo ácido: 💢 Dano 3 ↔️18 (até 2 alvos a 1,5m)</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>❄️ Congelar -10% de 🎬 Ação</td>
-          <td>2 🔵 Poder</td>
-          <td>1 Turno</td>
+          <td>📚 Sábio, 🦹 Criminoso, 🏺 Artesão, 🎴 Charlatão</td>
+          <td>🖐️ Mãos mágicas: move objeto ↔️9 por 3 turnos</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>🌩️ Eletrocutar 💢 Dano 1 e -5% de 🎬 Ação</td>
-          <td>3 🔵 Poder</td>
-          <td>1 Turno</td>
+          <td>📿 Neófito, 🎨 Artista, 🎴 Charlatão, 🫅 Nobre</td>
+          <td>🎭 Ilusão menor: cria som ou imagem pequena ↔️9 por 3 turnos</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>😵‍💫 Atordoar 1 Turno</td>
-          <td>4 🔵 Poder</td>
-          <td>1 Turno + Duração</td>
+          <td>🌳 Forasteiro, 🧭 Guia, 🏹 Caçador, 🐎 Cocheiro</td>
+          <td>💨 Rajada: empurra alvo 1m ↔️9</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>⛓️ Aprisionar 1 Turno</td>
-          <td>3 🔵 Poder</td>
-          <td>1 Turno + Duração</td>
+          <td>🎨 Artista, 🎴 Charlatão, 💈 Barbeiro, ⚖️ Mercador</td>
+          <td>🌀 Prestidigitação: pequenos efeitos mágicos ↔️3 por 1 turno</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>✈️ Voar 3m por Turno</td>
-          <td>2 🔵 Poder ou 5 ⚡ Energia</td>
-          <td>1 Turno</td>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>👻 Toque arrepiante: 💢 Dano 4 e impede cura próximo turno ↔️36</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🧪 Alquimista, 🦹 Criminoso, 🏺 Artesão, 🐀 Órfão</td>
+          <td>☠️ Raio de veneno: 💢 Dano 4 ↔️18</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🏺 Artesão, 🔬 Ourives, 🧹 Serviçal, ⚖️ Mercador</td>
+          <td>🧱 Consertar: repara objeto pequeno ↔️3</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 👳 Eremita, 😇 Angelical, 🫅 Nobre</td>
+          <td>🔊 Taumaturgia: efeitos sobrenaturais simples ↔️9 por 1 turno</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🌳 Forasteiro, 🧭 Guia, 🌾 Fazendeiro, 🏹 Caçador</td>
+          <td>🌱 Druidismo: pequenos efeitos naturais ↔️9 por 1 turno</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>📚 Sábio, 🫅 Nobre, ⚖️ Mercador, 🎴 Charlatão</td>
+          <td>🧠 Mensagem: envia mensagem curta ↔️36</td>
+          <td>60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>🪂 Planar</td>
-          <td>3 ⚡ Energia</td>
-          <td>1 Turno</td>
+          <td>💈 Barbeiro, ⚖️ Mercador, 🎴 Charlatão, 🫅 Nobre</td>
+          <td>🖐️ Amizade: vantagem social contra 1 alvo ↔️9 (1 turno)</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🏀 Saltar</td>
-          <td>2 ⚡ Energia</td>
-          <td>1 Turno</td>
+          <td>👳 Eremita, 📿 Neófito, 😇 Angelical, 🫅 Nobre</td>
+          <td>🛡️ Resistência: +2 🪖 Proteção (1 turno) ↔️Toque</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🏐 Pular</td>
-          <td>2 ⚡ Energia</td>
-          <td>1 Turno</td>
+          <td>📚 Sábio, 👳 Eremita, 🧭 Guia, 🫅 Nobre</td>
+          <td>🌀 Orientação: +2 em teste ↔️Toque (1 turno)</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>⏫ Potencializar +2 💢 Dano 2 Turnos</td>
-          <td>2 🔵 Poder ou 1 ⚡ Energia</td>
-          <td>2 Turnos + Duração</td>
+          <td>🌳 Forasteiro, 🧭 Guia, 📿 Neófito, 🧪 Alquimista</td>
+          <td>🔥 Criar chamas: cria chama na mão (3 turnos) ↔️Self</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🥀 Enfraquecer +2 💢 Dano 2 Turnos</td>
-          <td>2 🔵 Poder</td>
-          <td>2 Turnos</td>
+          <td>🌳 Forasteiro, 🏹 Caçador, 🧭 Guia, 🐺 Licantropo</td>
+          <td>🌿 Chicote de espinhos: 💢 Dano 4 puxa 1m ↔️9</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>💎 Reforçar +2 🪖 Proteção 1 Turno</td>
-          <td>2🔵 Poder ou 1 ⚡ Energia</td>
-          <td>2 Turnos</td>
+          <td>⛏️ Minerador, 🏺 Artesão, 🌳 Forasteiro, 🧭 Guia</td>
+          <td>🪨 Moldar terra: move terra ↔️9</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🤕 Vulnerabilizar -2 🪖 Proteção 1 Turno</td>
-          <td>2 🔵 Poder</td>
-          <td>2 Turnos</td>
+          <td>🎣 Pescador, ⛵ Marinheiro, 🌳 Forasteiro, 🧭 Guia</td>
+          <td>💧 Moldar água: move água ↔️9</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>💢 Dano 3</td>
-          <td>2 🔵 Poder ou 1 ⚡ Energia</td>
-          <td>1 Turno</td>
+          <td>🧪 Alquimista, 📿 Neófito, 🌳 Forasteiro, 🧭 Guia</td>
+          <td>🔥 Controlar chamas: altera fogo ↔️18 (1 turno)</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🛸 Teletransportar 1m por Turno</td>
-          <td>2 🔵 Poder</td>
-          <td>3 Turnos</td>
+          <td>🌳 Forasteiro, 🧭 Guia, 🏹 Caçador, 🐎 Cocheiro</td>
+          <td>🌬️ Moldar ar: move ar ↔️9</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>💭 Telepatia por turno </td>
-          <td>11 🔵 Poder</td>
-          <td>5 Turnos</td>
+          <td>🎨 Artista, 🎴 Charlatão, 📚 Sábio, 🫅 Nobre</td>
+          <td>🎨 Ilusão menor aprimorada: imagem com som ↔️9 (3 turnos)</td>
+          <td>60% 🎬Ação</td>
         </tr>
+
         <tr>
-          <td>🧲 Telecinesia 1m por Turno</td>
-          <td>7 🔵 Poder</td>
-          <td>5 Turnos</td>
-        </tr>
-        <tr>
-          <td>🖨️ Materializar Objeto por 2 Turnos</td>
-          <td>2 🔵 Poder</td>
-          <td>2 Turnos</td>
+          <td>👀 Vigia, 🛑 Guarda, 😇 Angelical, 📿 Neófito</td>
+          <td>👁️ Luz dançante: cria luzes ↔️36 (3 turnos)</td>
+          <td>60% 🎬Ação</td>
         </tr>
       </table>
 
-      <h2>Área e Múltiplos Alvos</h2>
-      <h3>Efeito da técnica = efeito / número de alvos</h3>
-
-      <h2>Exemplos de 🪄 Técnicas</h2>
+      <h2>Lista de 🪄 Truques (Fisicos)</h2>
       <table class="tabela">
         <tr>
-          <th>🔢 Número</th>
+          <th>Exclusivo</th>
           <th>🌟 Efeito</th>
-          <th>⌛Recarga</th>
+          <th>🎬 Ação</th>
+        </tr>
+        <tr>
+          <td>🥊 Pugilista, 🐺 Licantropo, 🐂 Minotauro, 🧌 Ogro</td>
+          <td>💥 Carregar golpe pesado: +1 💢 Dano proximo ataque ↔️Toque</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🧘 Serviçal, 🐀 Órfão</td>
+          <td>🫥 Esquiva rápida: +1 🪖 Proteção (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>🏹 Caçador, 👀 Vigia, 🧭 Guia, 🐎 Cocheiro</td>
+          <td>🎯 Mira simples: +1 🎯 Pontaria (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>🛡️ Defesa firme: reduz 1 💢 Dano recebido (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>🐈‍⬛ Felino, 🐺 Licantropo, 🐎 Cocheiro, 🏹 Caçador</td>
+          <td>🏃 Arrancada: +3m deslocamento ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>🦹 Criminoso, 🐀 Órfão, 🎴 Charlatão, 👀 Vigia</td>
+          <td>🗡️ Ataque oportuno: +1 💢 Dano se alvo distraído ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+        </tr>
+        <tr>
+          <td>🥊 Pugilista, ⚔️ Guerreiro, 🐂 Minotauro, 🧌 Ogro</td>
+          <td>🦵 Postura firme: +1 💪 Força (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🐀 Órfão, 🦹 Criminoso</td>
+          <td>👣 Passo leve: ignora terreno difícil (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🏹 Caçador, 👀 Vigia, 🧭 Guia, 🐎 Cocheiro</td>
+          <td>👁️ Foco: +1 👁️ Percepção (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>⚖️ Equilíbrio: não pode ser derrubado (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🐈‍⬛ Felino, 🐺 Licantropo, 🐎 Cocheiro, 🏇 Cavaleiro</td>
+          <td>⚡ Reflexo: +1 🤹 Destreza (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+
+        <tr>
+          <td>🦹 Criminoso, 🐀 Órfão, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🎭 Distração: alvo sofre -1 👁️ Percepção (1 turno) ↔️9</td>
+          <td>40% 🎬Ação</td>
+        </tr>
+      </table>
+      </section>
+      <section id="tecnicas_magias" class="pagina">
+      <h2>Lista de 🪄 Técnicas (Magias)</h2>
+      <table class="tabela">
+        <tr>
+          <th>Exclusivo</th>
+          <th>🌟 Efeito</th>
+          <th>🎬 Ação</th>
           <th>🔋 Consome</th>
+          <th>⌛ Recarga</th>
+          <th>🔷 Nível</th>
         </tr>
         <tr>
-          <td>1</td>
-          <td>🩹 Curar 16</td>
-          <td>8 Turnos</td>
-          <td>12 🔵 Poder</td>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 👳 Eremita</td>
+          <td>🛡️ Armadura arcana: sua 🪖 Proteção base vira 13 + 🤹 Destreza por 1 combate ↔️Si mesmo</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 1</td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>💢 Dano 9</td>
-          <td>3 Turnos</td>
-          <td>3 ⚡ Energia</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>⛓️ Aprisionar 2 Turnos</td>
-          <td>3 Turnos</td>
-          <td>6 🔵 Poder</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>🖨️ Materializar Espada 4 Turnos</td>
-          <td>4 Turnos</td>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 👳 Eremita</td>
+          <td>😴 Sono: até 2 alvos dormem 1 turno ↔️18</td>
+          <td>60% 🎬Ação</td>
           <td>4 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎨 Artista, 🎴 Charlatão</td>
+          <td>🎭 Disfarçar-se: muda aparência por 1 combate ↔️Si mesmo</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>📜 Identificar: revela propriedades de objeto ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Cena</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🦹 Criminoso</td>
+          <td>🫥 Invisibilidade: fica invisível por 2 turnos ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 👿 Demoníaca</td>
+          <td>✨ Mísseis mágicos: 💢 Dano 6 (até 3 alvos) ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>🛐 Comando: 1 alvo obedece ordem simples por 1 turno ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 👳 Eremita</td>
+          <td>🛡️ Escudo: +5 🪖 Proteção até próximo turno ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🫅 Nobre</td>
+          <td>💬 Enfeitiçar pessoa: alvo fica amigável por 2 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>🌫️ Névoa obscurecente: cria área com baixa visão por 3 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🛢️ Graxa: área faz cair (teste ou cai) por 2 turnos ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>✨ Bênção: +2 em testes e ataques por 3 turnos (até 2 aliados) ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>💀 Infligir ferimentos: 💢 Dano 6 ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>🪜 Passos longos: +3m deslocamento por 3 turnos ↔️Si mesmo</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🏹 Caçador, 🌳 Forasteiro</td>
+          <td>🎯 Marca do caçador: +2 💢 Dano contra alvo por 3 turnos ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 👳 Eremita</td>
+          <td>🧗 Queda suave: reduz dano de queda a 0 por 1 turno ↔️9</td>
+          <td>40% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🐎 Cocheiro</td>
+          <td>🐎 Falar com animais: comunicação simples por 3 turnos ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🦹 Criminoso</td>
+          <td>🫥 Disfarçar objeto: altera aparência de objeto por 3 turnos ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>🌑 Vida falsa: ganha +4 🩸 Vida temporária por 3 turnos ↔️Si mesmo</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>🌿 Emaranhar: prende área (teste ou fica preso) por 2 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>💫 Curar ferimentos: 🩹 Cura 6 ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🎭 Riso histérico: alvo fica caído/incapacitado 1 turno ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🔒 Tranca arcana: objeto fica selado por 1 combate ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>1 Cena</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>🩸 Raio de bruxa: 💢 Dano 4 por turno (até 3 turnos) ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>🧭 Detectar magia: percebe magia na área por 3 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>🛐 Proteção contra o bem e mal: vantagem defesa vs criaturas por 3 turnos ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>💥 Onda trovejante: 💢 Dano 4 e empurra 2m (área próxima) ↔️Self</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>🌊 Criar ou destruir água: cria/remove água ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Cena</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🫅 Nobre</td>
+          <td>🗣️ Sussurros dissonantes: 💢 Dano 4 e alvo recua 2m ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🦹 Criminoso</td>
+          <td>🕸️ Teia: prende área (teste ou preso) por 3 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>🌑 Escuridão: cria área sem visão por 3 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>✨ Restauração menor: remove efeito negativo ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🎭 Imagem espelhada: cria 2 ilusões que evitam ataques por 3 turnos ↔️Si mesmo</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🔓 Arrombar: abre fechaduras/portas ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Cena</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>🌫️ Nuvem de névoa: área com visão reduzida por 3 turnos ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>🩸 Raio abrasador: 💢 Dano 8 ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>🧭 Localizar objeto: encontra objeto ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>1 Cena</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>✨ Dissipar magia: remove efeito mágico ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🫥 Invisibilidade maior: invisível mesmo atacando (2 turnos) ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>6 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🔥 Bola de fogo: 💢 Dano 10 (área) ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>6 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>⚡ Relâmpago: 💢 Dano 10 em linha ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>6 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>💀 Toque vampírico: 💢 Dano 6 e 🩹 cura igual (3 turnos) ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>🌀 Voar: voa deslocamento por 3 turnos ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>✨ Porta dimensional: teleporta até ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>7 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🎭 Invisibilidade em grupo: até 2 aliados invisíveis por 2 turnos ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>7 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🧱 Muralha de fogo: 💢 Dano 6 ao atravessar (3 turnos) ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>7 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>❄️ Tempestade de gelo: 💢 Dano 8 e -10% 🎬Ação (área) ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>7 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>💀 Praga: 💢 Dano 6 por turno (2 turnos) ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>6 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>👁️ Olho arcano: visão remota ↔️36 por 3 turnos</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👳 Eremita, 😇 Angelical</td>
+          <td>✨ Cura em massa: 🩹 Cura 8 (até 3 aliados) ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>8 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🎭 Dominar pessoa: controla alvo por 1 turno ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>8 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🏺 Artesão</td>
+          <td>🔥 Cone de frio: 💢 Dano 10 (área cone) ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>8 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🌳 Forasteiro</td>
+          <td>⚡ Relâmpago em cadeia: 💢 Dano 8 (até 3 alvos) ↔️36</td>
+          <td>60% 🎬Ação</td>
+          <td>8 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👿 Demoníaca, 🧛 Vampírica</td>
+          <td>💀 Matar: 💢 Dano 12 ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>9 🔵 Poder</td>
+          <td>5 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 🧪 Alquimista, 🧭 Guia</td>
+          <td>🌀 Teletransporte: move até ↔️100</td>
+          <td>60% 🎬Ação</td>
+          <td>9 🔵 Poder</td>
+          <td>5 Turnos</td>
+          <td>🔷 Nível 5</td>
+        </tr>
+      </table>
+      </section>
+      <section id="tecnicas_habilidades" class="pagina">
+      <h2>Lista de 🪄 Técnicas (Habilidades)</h2>
+      <table class="tabela">
+        <tr>
+          <th>Exclusivo</th>
+          <th>🌟 Efeito</th>
+          <th>🎬 Ação</th>
+          <th>🔋 Consome</th>
+          <th>⌛ Recarga</th>
+          <th>🔷 Nível</th>
+        </tr>
+        <tr>
+          <td>🥊 Pugilista, ⚔️ Guerreiro, 🪖 Militar, 🐺 Licantropo</td>
+          <td>😡 Fúria: +2 💢 Dano e resistência a dano físico por 3 turnos ↔️Si mesmo</td>
+          <td>0% 🎬Ação</td>
+          <td>5 ⚡ Energia</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>💥 Surto de ação: ganha +1 ação (60% 🎬Ação) neste turno ↔️Si mesmo</td>
+          <td>0% 🎬Ação</td>
+          <td>6 ⚡ Energia</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🏇 Cavaleiro</td>
+          <td>🩹 Segundo fôlego: 🩹 Cura 6 ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>4 ⚡ Energia</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 👀 Vigia, 🧘 Serviçal</td>
+          <td>💨 Passo do vento: dobra deslocamento e ignora terreno por 1 turno ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🥊 Pugilista, 🐺 Licantropo</td>
+          <td>🥊 Rajada de golpes: +1 ataque corpo a corpo neste turno ↔️Si mesmo</td>
+          <td>0% 🎬Ação</td>
+          <td>4 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>🛑 Guarda, ⚔️ Guerreiro, 🪖 Militar, 👀 Vigia</td>
+          <td>🛡️ Defesa total: +3 🪖 Proteção até próximo turno ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🧘 Serviçal, 👀 Vigia</td>
+          <td>🧘 Defesa paciente: inimigos têm desvantagem ao te atacar por 1 turno ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🥊 Pugilista, 🐺 Licantropo</td>
+          <td>💥 Golpe atordoante: ataque que atordoa 1 turno ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>5 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>⚔️ Ataque extra: realiza +1 ataque neste turno ↔️Si mesmo</td>
+          <td>0% 🎬Ação</td>
+          <td>5 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>🏹 Caçador, 🌳 Forasteiro, 🧭 Guia, 👀 Vigia</td>
+          <td>👁️ Sentidos aguçados: +2 👁️ Percepção por 3 turnos ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>🦹 Criminoso, 🐀 Órfão, 🎴 Charlatão, 🎨 Artista</td>
+          <td>🗡️ Ataque furtivo: +4 💢 Dano se atacar oculto ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>🏇 Cavaleiro, 🐎 Cocheiro, ⚔️ Guerreiro, 🪖 Militar</td>
+          <td>🐎 Investida: +4 💢 Dano se mover antes do ataque ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>4 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>🛡️ Indomável: refaz teste falho ↔️Si mesmo</td>
+          <td>0% 🎬Ação</td>
+          <td>5 ⚡ Energia</td>
+          <td>1 Combate</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🧘 Serviçal, 🐺 Licantropo</td>
+          <td>💫 Evasão: reduz dano de área à metade (ou 0 se sucesso) por 1 turno ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>4 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>🦹 Criminoso, 🐀 Órfão, 🎴 Charlatão, 👀 Vigia</td>
+          <td>🫥 Esquiva astuta: pode usar movimento sem ser atingido por reação ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>🏹 Caçador, 🌳 Forasteiro, 🧭 Guia, 🐎 Cocheiro</td>
+          <td>🎯 Estilo de luta: +2 💢 Dano com arma por 3 turnos ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>4 ⚡ Energia</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+        <tr>
+          <td>🥊 Pugilista, 🐺 Licantropo, 🧌 Ogro, 🐂 Minotauro</td>
+          <td>💥 Golpe brutal: dobra 💢 Dano em ataque ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>6 ⚡ Energia</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 4</td>
+        </tr>
+        <tr>
+          <td>👳 Monge, 🐈‍⬛ Felino, 🧘 Serviçal, 👀 Vigia</td>
+          <td>🧠 Mente calma: remove efeito mental ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+      </table>
+      </section>
+      <section id="tecnicas_extras" class="pagina">
+      <h2>Lista de 🪄 Técnicas Extras</h2>
+      <table class="tabela">
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 😇 Angelical, 🧪 Alquimista</td>
+          <td>🩹 Curar: 🩹 Cura 4 vida ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 📚 Sábio, 👁️ Vigia, 😇 Angelical</td>
+          <td>🕶️ Cegar: alvo cego 1 turno ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧪 Alquimista, 🧙 Sábio, 🧝🏼 Élfica</td>
+          <td>❄️ Congelar: -10% 🎬Ação ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>2 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>🧪 Alquimista, 📿 Neófito, 🧙 Sábio, 🐲 Draconiana</td>
+          <td>🌩️ Eletrocutar: 💢 Dano 1 e -5% 🎬Ação ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 👳 Monge, 🐺 Licantropo</td>
+          <td>😵‍💫 Atordoar: alvo perde turno ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 🧌 Ogro, 🐂 Minotauro</td>
+          <td>⛓️ Aprisionar: imobiliza 1 turno ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>😇 Angelical, 🐲 Draconiana, 🧝🏼 Élfica, 📿 Neófito</td>
+          <td>✈️ Voar: 3m por turno ↔️Si mesmo (2 turnos)</td>
+          <td>40% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>🐈‍⬛ Felino, 🐎 Cocheiro, 🏹 Caçador, 🧭 Guia</td>
+          <td>🪂 Planar: queda segura ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>🐈‍⬛ Felino, 🐺 Licantropo, 🧌 Ogro, 🐂 Minotauro</td>
+          <td>🏀 Saltar: +3m salto ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>🐈‍⬛ Felino, 🐺 Licantropo, 🏹 Caçador, 🧭 Guia</td>
+          <td>🏐 Pular: ignora obstáculos baixos ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🐺 Licantropo, 🧌 Ogro</td>
+          <td>⏫ Potencializar: +2 💢 Dano por 2 turnos ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>3 ⚡ Energia</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 🧪 Alquimista, 👿 Demoníaca</td>
+          <td>🥀 Enfraquecer: alvo +2 💢 dano recebido (2 turnos) ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🛑 Guarda, 🧌 Ogro</td>
+          <td>💎 Reforçar: +2 🪖 Proteção (1 turno) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 👿 Demoníaca, 🧪 Alquimista</td>
+          <td>🤕 Vulnerabilizar: -2 🪖 Proteção (1 turno) ↔️9</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>2 Turnos</td>
+          <td>🔷 Nível 2</td>
+        </tr>
+
+        <tr>
+          <td>⚔️ Guerreiro, 🪖 Militar, 🧌 Ogro, 🐂 Minotauro</td>
+          <td>💢 Golpe bruto: 💢 Dano 3 ↔️Toque</td>
+          <td>60% 🎬Ação</td>
+          <td>2 ⚡ Energia</td>
+          <td>1 Turno</td>
+          <td>🔷 Nível 1</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 🧪 Alquimista, 👿 Demoníaca</td>
+          <td>🛸 Teletransporte: 3m por turno (2 turnos) ↔️Si mesmo</td>
+          <td>40% 🎬Ação</td>
+          <td>4 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 👿 Demoníaca, 😇 Angelical</td>
+          <td>💭 Telepatia: comunicação mental ↔️36 (2 turnos)</td>
+          <td>40% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>📿 Neófito, 🧙 Sábio, 🧪 Alquimista, 🧝🏼 Élfica</td>
+          <td>🧲 Telecinesia: move objeto 3m por turno (2 turnos) ↔️18</td>
+          <td>60% 🎬Ação</td>
+          <td>5 🔵 Poder</td>
+          <td>4 Turnos</td>
+          <td>🔷 Nível 3</td>
+        </tr>
+
+        <tr>
+          <td>🧪 Alquimista, 📿 Neófito, 🧙 Sábio, 🏺 Artesão</td>
+          <td>🖨️ Materializar: cria objeto simples (2 turnos) ↔️3</td>
+          <td>60% 🎬Ação</td>
+          <td>3 🔵 Poder</td>
+          <td>3 Turnos</td>
+          <td>🔷 Nível 2</td>
         </tr>
       </table>
     </section>
-
-
 </body>
 
 </html>

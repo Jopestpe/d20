@@ -1,24 +1,20 @@
 
 :root {
-   --cor-fundo: #ffffff;
-   --cor-fundo-2: #fffadf;
-   --cor-texto: #111111; 
-   --cor-borda: #7F7F7F;
+   --cor-fundo: #d1ccb7;
+   --cor-texto: #3c3c3c;
+   --cor-borda: #58170d;
    --cor-azul: #4096f5;
+   --cor-pagina: #f4e9cd;
+   --texto-contraste: 1px 1px 0 rgba(0,0,0,0.6);
    --borda-normal: solid 2px var(--cor-borda);
-   --borda-destaque: solid 2px var(--cor-azul);
-   --raio-borda:15px;
+   --raio-borda: 5px;
    --altura-sumario: 8vh;
    --espaco-paginas: calc(4vh + 2px);
+   --margem-interna-pagina: 4rem 6rem;
+   --a4-altura: 29.7cm;
+   --a4-largura: 21cm;
 }
 
-@media (prefers-color-scheme: dark) { 
-   :root {
-      --cor-fundo: #111111;
-      --cor-texto: #fffadf;
-      --cor-borda: #cecece;
-   } 
-}
 
 @font-face {
    font-family: "Twemoji";
@@ -27,15 +23,16 @@
 }
 
 @font-face {
-   font-family: "Cantarell";
-   src: url('./font/Cantarell.otf');
-   font-display: optional;
+  font-family: "FontePrincipal";
+  src: url('./font/CrimsonText-Regular.ttf');
+  font-display: optional;
 }
 
 * {
    color: var(--cor-texto);
-   font-family: Roboto,'Cantarell','Twemoji';
+   font-family: 'FontePrincipal','Twemoji', serif;
    font-size: 12px;
+   font-size: 14px;
    box-sizing: border-box;
 }
 
@@ -70,9 +67,9 @@ body {
 
 .aba {
    margin-top:10px;
-	margin-bottom:16px;
+   margin-bottom:16px;
    text-decoration: none;
-   background-color: var(--cor-fundo);
+   background-color: var(--cor-pagina);
    border: var(--borda-normal);
    border-radius: var(--raio-borda);
    display:flex;
@@ -84,7 +81,9 @@ body {
 
 .aba:hover {
    cursor: pointer;
-   border: var(--borda-destaque);
+   border-color: var(--cor-pagina);
+   background-color: var(--cor-borda);
+   color: var(--cor-pagina);
 }
 
 .paginas {
@@ -92,14 +91,14 @@ body {
 }
 
 .pagina {
+   background-color: var(--cor-pagina);
    display: flex;
    scroll-margin-top: 9vh;
    flex-direction: column;
    align-items: center;
-   padding: 6px 6px 32px 6px;
+   padding: var(--margem-interna-pagina);
    overflow-y: scroll;
    overflow-x: hidden;
-   background-color: var(--cor-fundo);
    border: var(--borda-normal);
    border-radius: var(--raio-borda);
    margin-top: var(--espaco-paginas);
@@ -107,13 +106,14 @@ body {
    margin-right: auto;
    margin-bottom: var(--espaco-paginas);
    width: 90%;
-   max-width: 800px;
-   min-height: 90vh;
-   @media (max-width: 800px) {
+   max-width: var(--a4-largura);
+   min-height: var(--a4-altura);
+   @media (max-width: var(--a4-largura)) {
       width: 100%;
       border: none;
       border-radius: 0px;
       border-block: var(--borda-normal);
+      padding: 4px;
    }
 }
 
@@ -124,9 +124,10 @@ body {
 }
 
 h1,h2 {
-    font-size: 1.8rem;
-    margin-block: 12px;
-    text-align: center;
+  color: var(--cor-borda);
+  font-size: 1.8rem;
+  margin-block: 12px;
+  text-align: center;
 }
 
 h3,h4 {
@@ -152,71 +153,101 @@ hr {
     font-size: 16px;
 }
 
-.forca {
-    color: rgba(192, 0, 0, 1);
-}
+.forca {color: rgba(192, 0, 0, 1); }
+.destreza {color: rgba(0,176, 80, 1); }
+.constituicao {color: rgba(112, 48, 160, 1); }
+.carisma {color: rgba(255, 200, 38, 1); }
+.percepcao {color: rgba(131, 60, 11, 1); }
+.intelecto {color: rgba(68, 113, 196, 1); }
 
-.destreza {
-    color: rgba(0,176, 80, 1);
-}
-
-.constituicao {
-    color: rgba(112, 48, 160, 1);
-}
-
-.carisma {
-    color: rgba(255, 200, 38, 1);
-}
-
-.percepcao {
-    color: rgba(131, 60, 11, 1);
-}
-
-.intelecto {
-    color: rgba(68, 113, 196, 1);
+.forca, .destreza, .constituicao, .carisma, .percepcao, .intelecto {
+  text-shadow: var(--texto-contraste);
 }
 
 .tabela {
-    width: 90%;
-    border-collapse: collapse;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
 }
 
-.tabela th,
-.tabela td{
-    border: solid 1px var(--cor-borda);
+.tabela th, .tabela td{
     padding: 4px;
     min-width: 20px;
     height: 28px;
     font-size: 16px;
 }
+
 .tabela th {
-    font-weight: bold;
+  font-weight: bold;
+  background-color: var(--cor-borda);
+  color: var(--cor-pagina);
 }
+
+.tabela tr:nth-child(even) {
+  background-color: var(--cor-fundo);
+}
+
 .atalho {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.4rem;
-    color: var(--cor-azul);
-    text-decoration: none;
+    color: var(--cor-borda);
+    text-decoration: underline;
 }
 
-::-webkit-scrollbar {
-    width: 4px;
+.atalho:hover {
+  background-color: var(--cor-fundo);
 }
 
-::-webkit-scrollbar-track {
-    background-color: var(--cor-fundo);
-}
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background-color: var(--cor-fundo);}
+::-webkit-scrollbar-thumb {-color: var(--cor-titulo);}
+::-webkit-scrollbar-thumb:hover {background-color: var(--cor-texto);}
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--cor-borda);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--cor-texto);
+@page {
+  margin: 0;
+  size: auto;
 }
 
 @media print {
-  body { margin: 0; }
-  .abas { display: none; }
-  .pagina { display: flex; page-break-after: always; }
+  html, body, .paginas {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow: visible !important;
+    background-color: var(--cor-pagina) !important;
+  }
+  .abas { 
+    display: none !important; 
+  }
+  .paginas {
+    background-color: var(--cor-pagina) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .pagina { 
+    background-color: var(--cor-pagina) !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 100vh !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: var(--margem-interna-pagina) !important;
+    page-break-after: always;
+    page-break-inside: avoid;
+    display: block !important;
+    -webkit-print-color-adjust: exact; 
+    print-color-adjust: exact;
+  }
+  h1, h2, h3, h4, tr, p {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .tabela {
+    page-break-inside: auto;
+  }
+  .tabela tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
 }
