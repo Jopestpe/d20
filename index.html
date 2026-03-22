@@ -18,7 +18,7 @@
     <a class="aba" href="#fazer" title="Página para fazer ficha">📝 Fazendo a ficha</a>
     <a class="aba" href="#sistema" title="Página do sistema">⚙️ Sistema</a>
     <a class="aba" href="#ancestralidade" title="Página das ancestralidades">🚼 Ancestralidade</a>
-    <a class="aba" href="#ocupações" title="Página das ocupações">💼 Ocupações</a>
+    <a class="aba" href="#ocupacoes" title="Página das ocupações">💼 Ocupações</a>
     <a class="aba" href="#loja" title="Página loja">🛍️ Loja</a>
     <a class="aba" href="#defeitos" title="Página de defeitos">🙁 Defeitos</a>
     <a class="aba" href="#qualidades" title="Página de qualidades">🙂 Qualidades</a>
@@ -201,14 +201,6 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
       </table>
       <h2>🪄 Técnicas</h2>
       <table class="tabela">
@@ -217,12 +209,6 @@
           <th>🎬 Ação</th>
           <th>🔋 Consome</th>
           <th>⌛Recarga</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
         </tr>
         <tr>
           <td></td>
@@ -259,11 +245,12 @@
         </tr>
         <tr>
           <td>🚼 Ancestralidade</td>
-          <td>Escolha uma Ancestralidade</td>
+          <td>Escolha uma <a class="atalho" href="#ancestralidade" title="🚼 Ancestralidade">🚼 Ancestralidade</a></td>
         </tr>
         <tr>
           <td>💼 Ocupação</td>
-          <td>Escolha uma Classe ou Profissão</td>
+          <td>Escolha uma <a class="atalho" href="#ocupacoes" title="Profissões">Profissões</a> ou 
+          <a class="atalho" href="#antecedentes" title="Antecedentes">Antecedentes</a></td>
         </tr>
         <tr>
           <td>🔷 Nível</td>
@@ -424,9 +411,9 @@
           <td>Inicia com 10 + (✊<span class="constituicao atributo">Constituição</span> * 4)</td>
         </tr>
         <tr>
-          <td>🪖 Proteção</td>
-          <td>O quão protegido você está, é definida pelo equipamentos que você usa</td>
-          <td>Inicia com 0</td>
+          <td>🛡️ Defesa</td>
+          <td>Sua defesa passiva</td>
+          <td>(10 ou 🪖 Proteção) + (🤹 <span class="destreza atributo">Destreza</span>) + (🥊 Briga ou 🗡️Manuseio ou 🤺 Reflexo)</td>
         </tr>
         <tr>
           <td>🍽️ Nutrição</td>
@@ -436,7 +423,7 @@
         <tr>
           <td>🧘 Sanidade (<span class="intelecto atributo">Int</span>)</td>
           <td>O quão louco você está</td>
-          <td>Inicia com 10 + (🧘Sanidade + 🧠<span class="intelecto atributo">Intelecto</span> * 4)</td>
+          <td>Inicia com 10 + (🧠 <span class="intelecto atributo">Intelecto</span> * 🧘Sanidade)</td>
         </tr>
         <tr>
           <td>⚡ Energia</td>
@@ -452,7 +439,9 @@
       <h2>😐 Qualidades & Defeitos</h2>
       <h3>Você possui 3 pontos para obter em 🙂 Qualidades</h3>
       <h3>Pegar 🙁 Defeitos te dá pontos para obter 🙂 Qualidades</h3>
-      <h3>Veja na aba de 🙂 Qualidades e 🙁 Defeitos</h3>
+      <h3>Veja na aba de 🙂 
+      <a class="atalho" href="#qualidades" title="Qualidades">Qualidades</a> 
+      e 🙁 <a class="atalho" href="#defeitos" title="Defeitos">Defeitos</a> </h3>
       <h2>🎒Pertences</h2>
       <h3>Seu 🪙Dinheiro = 1d20 + 5 + Recursos </h3>
       <h3>Adquira 🎒Pertences na <a class="atalho" href="#loja" title="Página loja">🛍️ Loja</a></h3>
@@ -585,36 +574,13 @@
           <td>❗Dano da arma</td>
         </tr>
       </table>
-      <h2>🛡️Defesa</h2>
-      <table class="tabela">
-        <tr>
-          <td>Tipo</td>
-          <td>Evitar</td>
-        </tr>
-        <tr>
-          <td>Desarmado</td>
-          <td>🎲1d20 +🥊Briga + 🤹<span class="destreza atributo">Destreza</span> >= 💥Ataque</td>
-        </tr>
-        <tr>
-          <td>Corpo a corpo</td>
-          <td>🎲1d20 +🗡️Manuseio + 🤹<span class="destreza atributo">Destreza</span> >= 💥Ataque</td>
-        </tr>
-        <tr>
-          <td>Esquivar</td>
-          <td>🎲1d20 +🤺Reflexo + 🤹<span class="destreza atributo">Destreza</span> >= 💥Ataque</td>
-        </tr>
-        <tr>
-          <td>🪖Proteção</td>
-          <td>🪖Proteção >= 💥Ataque</td>
-        </tr>
-      </table>
       <h2>🤺 Contra ataque</h2>
       <table class="tabela">
         <tr>
-          <td>Se sua defesa for > ataque + 10 você abre contra ataque</td>
+          <td>Se sua defesa for > ataque + 10 você ganha 60% 🎬Ação</td>
         </tr>
         <tr>
-          <td>Você pose usar o contra ataque para atacar ou se movimentar</td>
+          <td>Você pode usar essa 🎬Ação para oque preferir: atacar, movimentar entre outros</td>
         </tr>
       </table>
       <h2>💥💥Ataques múltiplos</h2>
@@ -633,26 +599,37 @@
         <tr>
           <th>Tipo</th>
           <th>Metragem percorrida</th>
+          <th>🎬Ação</th>
         </tr>
         <tr>
           <td>Normal</td>
-          <td>9 Metros por 🎬Ação</td>
+          <td>9 Metros</td>
+          <td>40%</td>
         </tr>
         <tr>
-          <td>Correr</td>
-          <td>9 Metros + 🎲1d20 +🏃Atletismo +💪 <span class="forca atributo">Força</span> por 🎬Ação</td>
-        </tr>
-        <tr>
-          <td>Escalar</td>
-          <td>4 Metros por 🎬Ação</td>
+          <td>Silencioso</td>
+          <td>9 Metros teste (🎲1d20 +🥷Furtividade +🤹 <span class="destreza atributo">Destreza</span> > 🥢Dificuldade)</td>
+          <td>40%</td>
         </tr>
         <tr>
           <td>Abaixado</td>
-          <td>7 Metros por 🎬Ação</td>
+          <td>7 Metros + ((🎲1d20 +🥷Furtividade +🤹 <span class="destreza atributo">Destreza</span>) / 2 ) </td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Correr</td>
+          <td>9 Metros + ((🎲1d20 +🏃Atletismo +💪 <span class="forca atributo">Força</span>)  / 2 )</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>Escalar</td>
+          <td>4 Metros + ((🎲1d20 +🏃Atletismo +💪 <span class="forca atributo">Força</span>)  / 5 )</td>
+          <td>40%</td>
         </tr>
         <tr>
           <td>Nadar</td>
-          <td>5 Metros por 🎬Ação</td>
+          <td>5 Metros + ((🎲1d20 +🏃Atletismo +💪 <span class="forca atributo">Força</span>)  / 5 )</td>
+          <td>40%</td>
         </tr>
       </table>
       <h2>🥢Dificuldade</h2>
@@ -920,7 +897,7 @@
       </table>
     </section>
 
-    <section id="ocupações" class="pagina">
+    <section id="ocupacoes" class="pagina">
       <h1>💼Ocupações</h1>
       <h2>Profissões</h2>
       <table class="tabela">
@@ -1075,6 +1052,8 @@
           <td>+1💡Intuição</td>
         </tr>
       </table>
+   </section>
+    <section id="antecedentes" class="pagina">
       <h2>Antecedentes</h2>
       <table class="tabela">
         <tr>

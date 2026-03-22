@@ -31,8 +31,7 @@
 * {
    color: var(--cor-texto);
    font-family: 'FontePrincipal','Twemoji', serif;
-   font-size: 12px;
-   font-size: 14px;
+   font-size: 1.0rem;
    box-sizing: border-box;
 }
 
@@ -170,13 +169,6 @@ hr {
   border-collapse: collapse;
 }
 
-.tabela th, .tabela td{
-    padding: 4px;
-    min-width: 20px;
-    height: 28px;
-    font-size: 16px;
-}
-
 .tabela th {
   font-weight: bold;
   background-color: var(--cor-borda);
@@ -188,8 +180,6 @@ hr {
 }
 
 .atalho {
-    font-weight: bold;
-    font-size: 1.4rem;
     color: var(--cor-borda);
     text-decoration: underline;
 }
